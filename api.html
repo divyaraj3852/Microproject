@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Information</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="api.html">API Info</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>API Information</h1>
+    </header>
+   
+    <main>
+        <p>Our API provides access to a variety of data through a simple interface. You can use our API to fetch data from the server and display it in your application. The API supports the following features:</p>
+        <ul>
+            <li>Fetching JSON data</li>
+            <li>Handling asynchronous requests using Async/Await</li>
+            <li>Serving static files with Express</li>
+        </ul>
+        <p>To use our API, make an HTTP GET request to the specified endpoint. The server will respond with the requested data in JSON format. Here is an example of how you can make a request using JavaScript:</p>
+        <pre><code>
+fetch('http://localhost:3000/data')
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error('Error:', error));
+        </code></pre>
+        <p>For more details on using our API, please refer to the documentation or contact us if you have any questions.</p>
+    </main>
+</body>
+</html>
